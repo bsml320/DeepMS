@@ -22,9 +22,9 @@ Users can repeat our result in our origial study by using below paramters:
 `> python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0   `  
 Some slight difference would happen when different TensorFlow and keras version are used. 
 We further merge similar latent layers to representative mutational signatures.   
-  ![SBS] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_signatures.pdf)    
-  ![DBS] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/DBS_signatures.pdf)   
-  ![Indel] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/Indel_signatures.pdf)   
+  ![SBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_signatures.pdf)    
+  ![DBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/DBS_signatures.pdf)   
+  ![Indel](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/Indel_signatures.pdf)   
 ## 2.4 Results plot mutational signatures
 We provide the final results in our manuscript and R codes (in folder R_script_plot) to repeat the figures in our original manuscript.
 These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them.  
