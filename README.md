@@ -19,8 +19,8 @@ DeepMS utilize the Denoising Sparse Auto-Encoder (DSAE) model with three layers:
  `> python ./DeepMS_model.py WGS_PCAWG.SBS_mutation_frequency.tsv 200 32 1e-4 0  `  
  `> python ./DeepMS_model.py WGS_PCAWG.DBS_mutation_frequency.tsv 35 32 1e-4 0.01  `  
  `> python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0   `  
-&#8194;&#8194;Some slight difference would happen when different TensorFlow and keras version are used. 
-&#8194;&#8194;We further merge similar latent layers to representative mutational signatures.   
+&#8194;&#8194;Some slight difference would happen when different TensorFlow and keras version are used.   
+&#8194;&#8194;We further merge similar latent layers to representative mutational signatures.    
   ![SBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_signatures.pdf)    
   ![DBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/DBS_signatures.pdf)   
   ![Indel](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/Indel_signatures.pdf)   
