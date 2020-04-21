@@ -21,6 +21,5 @@ python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0
 ## 2.4 Results plot
 We provide the R code and results in our manuscript to repeat the figure in our manuscript.
 These R scripts rely on some necessary package, including RColorBrewer. If user use any code for signature plot, please also cite our manuscript.
-
 ## Citation
-Pei G, Hu R, Dai Y, Zhao Z, Jia P. Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network. Underreview.
+Pei G, Hu R, Dai Y, Zhao Z, Jia P. Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network. Under review.
