@@ -1,6 +1,4 @@
 # DeepMS
-(https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_latents.pdf)
-
 # 1. DeepMS introduction
 Millions of somatic mutations have recently been discovered in cancer genomes. These mutations in cancer genomes occur due to internal and external mutagenesis forces. Decoding the mutational processes by examining their unique patterns has successfully revealed many known and novel signatures from whole exome data, but many still remain undiscovered. Here, we developed a deep learning approach, DeepMS, to decompose mutational signatures using 52,671,908 somatic mutations from 2780 highly curated cancer genomes with whole genome sequencing (WGS) in 37 cancer types/subtypes. With rigorous model training and comparison, we characterized 54 signatures for single base substitutions (SBS), 11 for doublet base substitutions (DBS) and 16 for small insertions and deletions (Indel). Compared to the previous methods, DeepMS could discover 37 SBS, 5 DBS and 9 Indel new signatures, many of which represent associations with DNA mismatch or base excision repair and cisplatin therapy mechanisms. The first deep learning model DeepMS on WGS somatic mutational profiles enable us identify more comprehensive context-based mutational signatures than traditional NMF approaches.
 
@@ -23,6 +21,10 @@ Users can repeat our result in our origial study by using below paramters:
 `> python ./DeepMS_model.py WGS_PCAWG.DBS_mutation_frequency.tsv 35 32 1e-4 0.01  `  
 `> python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0   `  
 Some slight difference would happen when different TensorFlow and keras version are used. 
+We further merge similar latent layers to representative mutational signatures.  
+  ![SBS] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_signatures.pdf)
+  ![DBS] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/DBS_signatures.pdf)
+  ![Indel] (https://github.com/bsml320/DeepMS/tree/master/R_script_plot/Indel_signatures.pdf)
 ## 2.4 Results plot mutational signatures
 We provide the final results in our manuscript and R codes (in folder R_script_plot) to repeat the figures in our original manuscript.
 These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them.  
