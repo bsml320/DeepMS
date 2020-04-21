@@ -13,13 +13,14 @@ DeepMS deals mutation frequency matrix directly. For convenience, we provide the
 ## 2.3 DeepMS test
 DeepMS utilize the Denoising Sparse Auto-Encoder (DSAE) model with three layers: an input layer, a latent layer, and an output layer. The input layer takes the modified mutation frequency matrix (i.e., normalized mutation frequency matrix with random noise, denoted by X) as input; the latent layer represents the compressed representation of the input matrix after encoding; and the output layer represents the reconstructed mutation frequency matrix. The encoding process includes a linear –transformation of the input matrix followed by a nonlinear Rectified Linear Units (ReLU) transformation, Y=relu(W_e X+b_e), where X^(∈K×N) is the modified mutational profiles, Y^(∈K×L) is the latent matrix, 〖W_e〗^(∈N×L) is the weight matrix, and b_e is the hidden bias vector during the encoding process. The decoding process aims at reconstructing the input by transforming the latent matrix Y using the decoding weight matrix W_d and the hidden bias vector b_d, followed by applying a Softmax classification.  
 We defined the loss function L_H based on the difference between the input matrix (X) and the reconstructed mutational profiles on the output layer (Z). L_H, also called the reconstruction error, takes the format of mean squared error (MSE). To avoid flat signatures, we further included a L1 regularization to minimize L_H.  
-Several parameters in the model could impact the performance, such as dimension of the latent layer, number of epochs, batch size, and learning rate. To reach the appropriate performance of the model, the user need to conduct parameter optimization.  
-To repeat our result in origial study  
+Several parameters in the model could impact the performance, such as dimension of the latent layer, batch size, learning rate and noisy factor. To reach the appropriate performance of the model, users need to conduct parameter optimization on your own data.  
+To repeat our result in our origial study:  
 python ./DeepMS_model.py WGS_PCAWG.SBS_mutation_frequency.tsv 200 32 1e-4 0  
 python ./DeepMS_model.py WGS_PCAWG.DBS_mutation_frequency.tsv 35 32 1e-4 0.01  
 python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0  
 ## 2.4 Results plot
 We provide the R code and results in our manuscript to repeat the figure in our manuscript.
-These R scripts rely on some necessary package, including RColorBrewer. If user use any code for signature plot, please also cite our manuscript.
+These R scripts rely on some necessary package, such as RColorBrewer. 
+Please also cite our manuscript if users use R codes for signature plot.
 ## Citation
 Pei G, Hu R, Dai Y, Zhao Z, Jia P. Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network. Under review.
