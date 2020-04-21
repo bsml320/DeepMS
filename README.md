@@ -1,5 +1,4 @@
-# DeepMS
-![bbtnn](https://github.com/lkmklsmn/bbtnn/blob/master/examples/test1.png)
+# DeepMS (v1.0)
 # 1. DeepMS introduction
 Millions of somatic mutations have recently been discovered in cancer genomes. These mutations in cancer genomes occur due to internal and external mutagenesis forces. Decoding the mutational processes by examining their unique patterns has successfully revealed many known and novel signatures from whole exome data, but many still remain undiscovered. Here, we developed a deep learning approach, DeepMS, to decompose mutational signatures using 52,671,908 somatic mutations from 2780 highly curated cancer genomes with whole genome sequencing (WGS) in 37 cancer types/subtypes. With rigorous model training and comparison, we characterized 54 signatures for single base substitutions (SBS), 11 for doublet base substitutions (DBS) and 16 for small insertions and deletions (Indel). Compared to the previous methods, DeepMS could discover 37 SBS, 5 DBS and 9 Indel new signatures, many of which represent associations with DNA mismatch or base excision repair and cisplatin therapy mechanisms. The first deep learning model DeepMS on WGS somatic mutational profiles enable us identify more comprehensive context-based mutational signatures than traditional NMF approaches.
 
@@ -30,5 +29,6 @@ We further merge similar latent layers to representative mutational signatures.
 We provide the final results in our manuscript and R codes (in folder R_script_plot) to repeat the figures in our original manuscript.
 These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them.  
 Please remember cite our manuscript (Pei G, 2020) even you used the R codes for mutational signature plot.
+
 ## Citation
 Pei G, Hu R, Dai Y, Zhao Z, Jia P. Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network. 2020. Under review.
