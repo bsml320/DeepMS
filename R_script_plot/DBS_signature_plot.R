@@ -2,7 +2,7 @@ library(RColorBrewer)
 mycol <- c(brewer.pal(12,"Set3")[c(-2,-12)],brewer.pal(8,"Set2"),brewer.pal(9,"Set1"),brewer.pal(12,"Paired"))
 mycol <- mycol[-14]
 
-setwd("F:/4.UThealth_study/14.TCGA_mutation_signature/Manuscript_review_Final_code")
+setwd("./DeepMS/R_script_plot/")
 
 outdir = "."
 
