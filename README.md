@@ -24,7 +24,7 @@ We further merge similar latent layers to representative mutational signatures.
   ![SBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/SBS_signatures.pdf)    
   ![DBS](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/DBS_signatures.pdf)   
   ![Indel](https://github.com/bsml320/DeepMS/tree/master/R_script_plot/Indel_signatures.pdf)   
-## 2.4 Results plot mutational signatures
+## 2.4 Mutational signatures plot
 We provide the final results in our manuscript and R codes (in folder R_script_plot) to repeat the figures in our original manuscript.   
 These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them.  
 Please remember cite our manuscript (Pei G, 2020) even you used the R codes for mutational signature plot.
