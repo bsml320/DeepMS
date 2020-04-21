@@ -17,7 +17,7 @@ Several parameters in the model could impact the performance, such as dimension 
 To repeat our result in our origial study:  
 python ./DeepMS_model.py WGS_PCAWG.SBS_mutation_frequency.tsv 200 32 1e-4 0  
 python ./DeepMS_model.py WGS_PCAWG.DBS_mutation_frequency.tsv 35 32 1e-4 0.01  
-python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0
+python ./DeepMS_model.py WGS_PCAWG.Indel_mutation_frequency.tsv 42 32 1e-4 0  
 Some slight difference would happen on different TensorFlow and keras version. 
 ## 2.4 Results plot
 We provide the final results in our manuscript and R codes to repeat the figure in our original manuscript.
