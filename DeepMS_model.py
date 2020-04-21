@@ -9,10 +9,6 @@ np.random.seed(56)  # for reproducibility
 from keras.models import Model 
 from keras.layers import Dense, Input, Dropout
 from keras import regularizers
-import matplotlib
-matplotlib.use('Agg')
-
-import matplotlib.pyplot as plt
 
 #============================================
 output_file = sys.argv[1]
@@ -88,14 +84,6 @@ history_df = pd.DataFrame(hist.history)
 
 loss_file = os.path.join("DeepMS_"+output_file, 'Model_evaluation_'+output_file+'.txt')
 history_df.to_csv(loss_file, sep="\t")
-
-hist_plot_file = os.path.join("DeepMS_"+output_file, 'Model_evaluation_'+output_file+'.pdf')
-
-ax = history_df.plot()
-ax.set_xlabel('Epochs')
-ax.set_ylabel('Loss')
-fig = ax.get_figure()
-fig.savefig(hist_plot_file)
 
 # encoder model
 encoder = Model(inputs = input_dim, outputs = encoder_output)
