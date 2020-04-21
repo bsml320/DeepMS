@@ -22,7 +22,7 @@ Users can repeat our result in our origial study by using below paramters:
 Some slight difference would happen when different TensorFlow and keras version are used. 
 ## 2.4 Results plot mutational signatures
 We provide the final results in our manuscript and R codes to repeat the figure in our original manuscript.
-These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them. 
-Please remember cite our manuscript (Pei G, 2020) even users use the R codes for mutational signature plot.
+These R scripts (SBS1536, DBS and Indel) rely on some necessary package, such as RColorBrewer. Please install before use them.  
+Please remember cite our manuscript (Pei G, 2020) even you used the R codes for mutational signature plot.
 ## Citation
 Pei G, Hu R, Dai Y, Zhao Z, Jia P. Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network. 2020. Under review.
