@@ -1,6 +1,6 @@
 setwd(".")
 
-data = read.csv("WGS_PCAWG.indels.csv", head = T)
+data = read.csv("WGS_PCAWG/WGS_PCAWG.indels.csv", head = T)
 
 data_scale = data[,-c(1:4)]/max(as.vector(unlist(data[,-c(1:4)])))
 
