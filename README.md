@@ -12,7 +12,8 @@ DeepMS relies on python (>= 2.7), TensorFlow (>=1.15), keras (>=2.31).
 ## 2.2 Input data
 DeepMS deals mutation frequency matrix directly. For convenience, we provide the normorlized somatic mutations data from hole genome sequencing (WGS) of tumor samples by International Cancer Genome Consortium (ICGC) Pan-Cancer Analysis of Whole Genomes (PCAWG) working group. Each matrix was formatted as mutation types on rows and samples on columns, i.e., M = {mij}, i = 1,…K, j = 1,…N, where mij represented the frequency of mutation type i in sample j, K was the total number of mutation types (KSBS = 1536, KDBS = 78, KIndel = 84), and N was sample size (N = 2780). User can download them from original paper:  
   `>  wget https://dcc.icgc.org/api/v1/download?fn=/PCAWG/mutational_signatures/Input_Data_PCAWG7_23K_Spectra_DB/Mutation_Catalogs_--_Spectra_of_Individual_Tumours/WGS_PCAWG_2018_02_09.zip  `  
-  `>  unzip *PCAWG_2018_02_09.zip`  
+  `>  unzip -d WGS_PCAWG *WGS_PCAWG_2018_02_09.zip`  
+  `>  rm *WGS_PCAWG_2018_02_09.zip`  
 &#8194;&#8194;Then, user can preprocess these data by using our preprocess scripts.   
   `>  Rscript Preprocess/SBS_preprocess.R  `     
   `>  Rscript Preprocess/DBS_preprocess.R  `  
