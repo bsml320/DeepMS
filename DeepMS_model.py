@@ -42,7 +42,7 @@ os.mkdir("DeepMS_"+output_file)
 
 np.random.seed(56)
 
-test_set_percent = 0.1
+test_set_percent = 0.2
 
 x_test = mf_df.sample(frac=test_set_percent)
 #x_test = mf_df
